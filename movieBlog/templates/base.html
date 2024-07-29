@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+               <link rel="stylesheet" href="style.css">
+    <title>Мой блог</title>
+     <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-image: url('/static/images/111.jpg');
+background-position: center;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightBlue;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        header {
+            background-color: azure;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        h1 {
+            margin: 0;
+            color: blue;
+            background-color: pink;
+        }
+
+        main {
+
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="">
+    <div class="container">
+        <header>
+            <h1>Мой блог</h1>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>
